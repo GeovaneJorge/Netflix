@@ -1,0 +1,136 @@
+:root{
+
+    --vermelho:#E50914;
+    --preta:#141414;
+
+}
+
+*{
+    /*Resetando o CSS*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Elemnetos basicos*/
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color:#fff;
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial black',Times;
+    font-size: 30PX;
+
+}
+
+header nav a{
+    text-decoration: nome;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+
+}
+/* Filme Principal e foto*/
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa_good_doctor2.jpg');
+    height: 400px;
+    background-size:cover;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Filme Principal e foto*/
+.filme-principal2{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/lucafundo2.jpg');
+    height: 400px;
+    background-size:cover;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+/*Separando os botoes da descricao*/
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+.titulo{
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*Trabalahndo com os botoes Assistir agora e Mais informaçoes  */
+
+.botao{
+ background-color: rgba(0,0,0,.50);
+ border:nome;
+ color: white;
+ padding:15px 30px;
+ margin-right: 15px;
+ font-size: 12px;   
+ cursor: pointer;
+ transition: .3s ease all;
+
+}
+
+.botao:hover{
+    background-color: #fff;
+    color:black;
+
+}
+.botao i{
+    margin-right: 8px;
+
+}
+
+.box-filme{
+
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top:5px;
+}
+
+/* Trabalhando com as imagens da pagina inicial dos perfis  */
+.holder {
+    display: flex;
+    justify-content: center;
+}
+.imagem {
+  width: 250px;
+  margin: 10px;
+  position:relative;;
+  text-align: center;
+}
+.imagem::after {
+  content: attr(data-title); /* estilo que coloco a legenda no lugar */
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  left: 0;
+  
+}
+
+
